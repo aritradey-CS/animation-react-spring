@@ -3,7 +3,10 @@ import { Spring } from "react-spring";
 
 export default function Component1() {
   return (
-    <Spring>
+    <Spring
+    from={{ opacity: 0, margintTop: -500}}
+    to={{ opacity: 1, margintTop: 0}}
+    >
       {(props) => (
         <div style={props}>
           <div style={c1Style}>
